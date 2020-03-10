@@ -14,9 +14,6 @@ public class TitleVerification3 {
                 "https://westelm.com/");
 
 
-
-     //   WebDriver driver = BrowserFactory.createADriver("chrome");
-
         for (String eachUrl : urls) {
 
             WebDriver driver = BrowserFactory.createADriver("chrome");
