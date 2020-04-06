@@ -13,8 +13,12 @@ public abstract class PracticeCyberHomeTestBase {
     public WebDriverWait wait;
     public Actions actions;
 
+
+
+
     @BeforeMethod
     public void setup(){
+
         String url = ConfigurationReader.getProperty("practiceCyberURL");
         driver.get(url);
         driver.manage().window().maximize();
@@ -26,5 +30,6 @@ public abstract class PracticeCyberHomeTestBase {
     @AfterMethod
     public void teardown(){
         Driver.closeDriver();
+        BrowserUtils.wait(2000);
     }
 }
